@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+			box-sizing: border-box;		}
+		h2{
+			font-weight: 400;
+		}
+	</style>
+</head>
+<body>
+
+	<form id="form">
+		<div>
+			<label>Gender</label>
+			<select id="gen">
+				<option id="male">Male</option>
+				<option id="female">Female</option>
+				<span id="genders"></span>
+			</select>	
+		</div>
+		<div>
+			<label>Username</label>
+			<input type="" name="" id="username">
+			<span id="error0"></span>
+		</div>
+		<div>
+			<label>Firstname</label>
+			<input type="" name="" id="firstname">
+			<span id="error1"></span>
+		</div>
+		<div>
+			<label>Lastname</label>
+			<input type="" name="" id="lastname">
+			<span id="error2"></span>
+		</div>
+		<div>
+			<label>Email</label>
+			<input type="" name="" id="email">
+			<span id="error3"></span>
+		</div>
+		<div>
+			<label>Password</label>
+			<input type="" name="" id="password">
+			<span id="error4"></span>
+		</div>
+		<div>
+			<label>Confirm Password</label>
+			<input type="" name="" id="confirmPassword">
+			<span id="error5"></span>
+		</div>
+
+		<button id="btn">Register</button>
+		
+
+	</form>
+	<div>
+		<!-- Display the user detail successfully registered -->
+		<h2 id="s"></h2>
+		<h2 id="genDer"></h2>
+		<h2 id="UName"></h2>
+		<h2 id="FName"></h2>
+		<h2 id="LName"></h2>
+		<h2 id="E-mail"></h2>
+		<h2 id="pWord"></h2>
+		<h2 id="conPw"></h2>
+	</div>
+
+	
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
