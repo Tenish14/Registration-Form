@@ -6,6 +6,7 @@ Password should be greater than 8 characters
 Password and Confirm Paswword should match
 */
 document.getElementById('btn').addEventListener('click' , function(e){
+let details = document.getElementById('userdetails').value
 let userName  = document.getElementById('username').value	
 let firstName = document.getElementById('firstname').value
 let lastName = document.getElementById('lastname').value
@@ -85,16 +86,34 @@ var m6 = document.getElementById('genders')
 		m5.innerHTML = "Password Match"
 	}
 
+	if(gender == "Male") {
+		document.getElementById('userdetails').innerHTML = "User Details: " + "Mr"+ " " + firstName + " " + lastName
+		document.getElementById('s').innerHTML = "You are successfully registered"
+		document.getElementById('UName').innerHTML = "Username: " + userName
+		document.getElementById('FName').innerHTML = "Firstname: " +firstName
+		document.getElementById('LName').innerHTML = "Lastname: " + lastName
+		document.getElementById('genDer').innerHTML = "Gender: " + gender
+		document.getElementById('E-mail').innerHTML ="Email: " + email
+		document.getElementById('pWord').innerHTML ="Password: " + pw
+		document.getElementById('conPw').innerHTML ="Confirm Password: " + confirmPw
 
-	document.getElementById('s').innerHTML = "You are successfully registered"
-	document.getElementById('UName').innerHTML = "Username: " + userName
-	document.getElementById('FName').innerHTML = "Firstname: " +firstName
-	document.getElementById('LName').innerHTML = "Lastname: " + lastName
-	document.getElementById('genDer').innerHTML = "Gender: " + gender
-	document.getElementById('E-mail').innerHTML ="Email: " + email
-	document.getElementById('pWord').innerHTML ="Password: " + pw
-	document.getElementById('conPw').innerHTML ="Confirm Password: " + confirmPw
+		return false
+	} else if (gender == "Female") {
+		document.getElementById('userdetails').innerHTML = "User Details: " + "Mrs"+ " " + firstName + " " + lastName
+		document.getElementById('s').innerHTML = "You are successfully registered"
+		document.getElementById('UName').innerHTML = "Username: " + userName
+		document.getElementById('FName').innerHTML = "Firstname: " +firstName
+		document.getElementById('LName').innerHTML = "Lastname: " + lastName
+		document.getElementById('genDer').innerHTML = "Gender: " + gender
+		document.getElementById('E-mail').innerHTML ="Email: " + email
+		document.getElementById('pWord').innerHTML ="Password: " + pw
+		document.getElementById('conPw').innerHTML ="Confirm Password: " + confirmPw
+		
+
 	e.preventDefault()
+	}
+
+
 	
 })
 // document.getElementById('btn').onclick = function() {
