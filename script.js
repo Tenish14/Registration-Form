@@ -84,14 +84,13 @@ var m6 = document.getElementById('genders')
 	} else {
 		m5.innerHTML = "Password Match"
 	}
-	if(gender == "male"){
-		document.getElementById('genDer').innerHTML = "Gender: " + gender
-	}
+
 
 	document.getElementById('s').innerHTML = "You are successfully registered"
 	document.getElementById('UName').innerHTML = "Username: " + userName
 	document.getElementById('FName').innerHTML = "Firstname: " +firstName
 	document.getElementById('LName').innerHTML = "Lastname: " + lastName
+	document.getElementById('genDer').innerHTML = "Gender: " + gender
 	document.getElementById('E-mail').innerHTML ="Email: " + email
 	document.getElementById('pWord').innerHTML ="Password: " + pw
 	document.getElementById('conPw').innerHTML ="Confirm Password: " + confirmPw
